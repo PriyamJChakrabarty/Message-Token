@@ -1,0 +1,26 @@
+/* Container for memo display (green scheme) */
+.memo-container {
+  background-color: #e8f5e9; /* Light green background */
+  border: 2px solid #66bb6a; /* Green border */
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Memo header styling */
+.memo-container h2 {
+  font-size: 1.4em;
+  color: #2e7d32;
+  font-family: 'Sansita Swashed', cursive;
+  margin-bottom: 15px;
+}
+
+/* Individual memo styling */
+.memo-container .memo {
+  padding: 10px;
+  background-color: #ffffff;
+  border: 1px solid #4caf50;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  color: #2e7d32; /* Green text */
+}

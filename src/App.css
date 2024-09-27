@@ -1,0 +1,79 @@
+/* Style for the main container */
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+form {
+  background-color: #e0f7fa;
+  padding: 30px;
+  border-radius: 10px; /* Make it more square-ish */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  width: 100%;
+}
+
+.app-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px; /* Space between the Thanks box and memo container */
+  padding: 20px;
+}
+
+.app-container > div {
+  flex: 1;
+}
+
+
+/* Input box styling */
+.inputbox {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.inputbox input {
+  width: 100%;
+  padding: 10px;
+  background-color: #fff;
+  border: 2px solid #00796b; /* Add color border */
+  border-radius: 5px;
+  outline: none;
+  transition: 0.3s;
+  font-size: 16px;
+}
+
+/* Change color of the input box when focused */
+.inputbox input:focus {
+  background-color: #f0f0f0;
+  border-color: #004d40;
+}
+
+/* Animated label effect */
+.inputbox span {
+  position: absolute;
+  left: 10px;
+  padding: 10px 0;
+  pointer-events: none;
+  transition: 0.5s;
+  color: #00796b;
+}
+
+.inputbox input:focus ~ span,
+.inputbox input:valid ~ span {
+  transform: translateY(-20px);
+  font-size: 12px;
+  color: #004d40;
+}
+
+.inputbox input[type="submit"] {
+  background-color: #00796b;
+  color: white;
+  cursor: pointer;
+}
+
+.inputbox input[type="submit"]:hover {
+  background-color: #004d40;
+}

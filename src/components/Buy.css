@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@600&display=swap");
+
+/* Main container for Thank You Box */
+.center {
+  width: 15%; /* Reduced width to make it smaller */
+  margin: auto;
+  padding: 15px; /* Compact padding */
+  background-color: #e8f5e9; /* Light green */
+  border: 2px solid #66bb6a;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Header styling */
+.center h1 {
+  font-size: 1.1em; /* Slightly smaller font */
+  color: #2e7d32;
+  font-family: "Sansita Swashed", cursive;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* Input box styling */
+.center .inputbox {
+  position: relative;
+  width: 100%;
+  margin-bottom: 40px; /* Increased spacing between input boxes */
+}
+
+.center .inputbox input {
+  width: 100%;
+  padding: 10px; /* Increase padding to give more room */
+  border: 2px solid #4caf50;
+  background-color: #ffffff;
+  border-radius: 8px;
+  font-size: 0.9em;
+  color: black; /* Text color set to black */
+  outline: none;
+  transition: border 0.3s ease-in-out;
+}
+
+/* Placeholder (span) styling */
+.center .inputbox span {
+  position: absolute;
+  top: 50%; /* Center vertically */
+  left: 10px; /* Adjust left padding */
+  transform: translateY(-50%); /* Align vertically */
+  font-size: 0.9em;
+  color: #388e3c;
+  transition: all 0.3s;
+  pointer-events: none; /* Avoid interfering with input clicks */
+}
+
+.center .inputbox input:focus ~ span,
+.center .inputbox input:valid ~ span {
+  top: -10px; /* Move placeholder upwards */
+  left: 8px;
+  font-size: 0.75em; /* Reduce placeholder size when focused */
+  background: #e8f5e9;
+  padding: 0 5px;
+  color: #66bb6a;
+}
+
+/* Focus effect */
+.center .inputbox input:focus {
+  border-color: #2e7d32;
+}
+
+/* Submit button styling */
+.center .inputbox [type="submit"] {
+  width: 100%;
+  background-color: #66bb6a;
+  color: white;
+  border: none;
+  padding: 8px;
+  font-size: 0.9em;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.center .inputbox [type="submit"]:hover {
+  background-color: #388e3c;
+}
